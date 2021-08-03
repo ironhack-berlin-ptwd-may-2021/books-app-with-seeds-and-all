@@ -51,8 +51,8 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
-
-app.use('/', require('./routes/books'))
+// GET /books -- books routes is mounted on /books
+app.use('/books', require('./routes/books')) // file in charge of every route that starts with /books
 
 
 module.exports = app;

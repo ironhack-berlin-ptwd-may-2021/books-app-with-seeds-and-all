@@ -1,0 +1,8 @@
+<form action="/books/{{oneBook._id}}/editbook" method="post">
+  <input type="text" placeholder="Title of the book" name="booktitle" value="{{oneBook.title}}">
+  <input type="text" name="description" placeholder="description" value="{{oneBook.description}}" id="">
+  <input type="text" name="author" placeholder="author" value="{{oneBook.author}}" id="">
+  <input type="number" name="rating" placeholder="rating" value="{{oneBook.rating}}" id="">
+  {{!-- <input type="text" name="bookid" placeholder="rating" value="{{oneBook._id}}" id=""> --}}
+  <button type="submit">SAVE BOOK</button>
+</form>

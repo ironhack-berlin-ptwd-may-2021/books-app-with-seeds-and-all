@@ -1,6 +1,12 @@
 {{#each allBooks}}
 {{this.title}} -- {{this.author}}
 <br> <a href="/books/{{this._id}}">LINK TO DETAIL</a>
+<br> <a href="/books/{{this._id}}/editform">EDIT</a>
 <br>
 
+
 {{/each}}
+
+<a href="/books/createform">
+  <button>CREATE A NEW BOOK</button>
+</a>
