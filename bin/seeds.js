@@ -5,7 +5,7 @@ const Book = require('../models/book');
 
 // connection string (URL format) mongodb://localhost:27017/my-100th-project
 
-mongoose.connect(`mongodb://localhost/my-100th-project`, {
+mongoose.connect(process.env.MONGODB_URI, {
   useCreateIndex: true,
   useNewUrlParser: true,
   useUnifiedTopology: true
